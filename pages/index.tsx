@@ -1,27 +1,24 @@
 import type { NextPage } from 'next';
 import styled from "styled-components";
+import Image from "next/image";
+import Illustration  from './assets/test.svg';
+
 
 
 const Title = styled.h1`
   color: red;
 `;
 
-const Container = styled.div`
-  width: 100%;
-  height: 100vh;
-  background-color: #ebebeb;
-  display: flex;
-  justify-content: center;
-  align-items: center
-`;
 
 const Home: NextPage = () => {
   return (
-    <Container>
+    <>
       <Title>
         Hello World!
       </Title>
-    </Container>
+      <Image src="/test.svg" height={100} width={100} alt="An SVG of an eye"/>
+      <Illustration height={100} width={100} title={"An SVG of an eye"}/>
+    </>
   )
 }
 
