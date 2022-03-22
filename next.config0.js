@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
-// module.exports = {
-//   reactStrictMode: true,
-// }
-
+const { i18n } = require('./next-i18next.config');
 
 module.exports = {
   reactStrictMode: true,
@@ -15,6 +12,7 @@ module.exports = {
 
     return config
   },
+  i18n,
 
 }
 
